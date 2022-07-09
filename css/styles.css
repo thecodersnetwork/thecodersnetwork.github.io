@@ -11502,10 +11502,10 @@ footer.footer .social-link:hover {
 }
 .brand{
   position: fixed;
-  min-width: 200px;
-  max-width: 250px;
+  min-width: 100px;
+  max-width: 130px;
   width:20vw;
-  height: 200px;
+  height: 130px;
   margin: 0px 15px;
   z-index: 300;
   background-image: url(../assets/img/VR_title.png);
