@@ -11336,7 +11336,7 @@ html {
   height: 100%;
   transition: all 0.4s ease 0s;
   transform: translateX(250px);
-  background: #1D809F;
+  background:rgba(19,33,40, 0.8);
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -11500,6 +11500,19 @@ footer.footer .social-link:hover {
     font-size: 5.5rem;
   }
 }
+.brand{
+  position: fixed;
+  min-width: 200px;
+  max-width: 250px;
+  width:20vw;
+  height: 200px;
+  margin: 0px 15px;
+  z-index: 300;
+  background-image: url(../assets/img/VR_title.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: glower .33s ease-in 0ms infinite alternate;
+}
 .synopsis{
   background-image: url(../assets/img/synopsis.jpg);
   background-repeat: no-repeat;
@@ -11524,7 +11537,7 @@ footer.footer .social-link:hover {
   margin: 0px;
 }
 .synopsis.bg-black{
-  background-color: #000 !important;
+  background-color: #132128 !important;
 }
 .cast{
   max-height: 100vh;
@@ -11536,6 +11549,45 @@ footer.footer .social-link:hover {
   background-position: center;
   background-size: contain;
   background-attachment: fixed;
+  position: relative;
+  z-index: 0;
+}
+.cast .actor{
+  width:40vw;
+  text-align: left;
+  margin:0px 10vw 0px 5vw;
+  padding: 2rem 0px;
+  border-bottom: 1px dashed rgba(255,255,255,0.4);
+}
+.cast .actor span, .cast .actress span{
+  font-weight: 400;
+  font-size: 16px;
+  color:#cfcfcf;
+}
+.cast .actor h2, .cast .actress h2{
+ font-size: 3.5vw;
+}
+.cast .actor h2, .cast .actor span{
+  text-align: left;
+}
+.cast .actress h2, .cast .actress span{
+  text-align: right;
+}
+.cast .actress{
+  width:40vw;
+  text-align: right;
+  margin:0px 5vw 0px 10vw;
+  padding: 2rem 0px;
+  border-bottom: 1px dashed rgba(255,255,255,0.4);
+}
+.cast .text-content{
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+
+  color: white;
+  background-color: transparent;
+  height: 100vh;
 }
 .portfolio-item {
   display: block;
@@ -11604,7 +11656,7 @@ footer.footer .social-link:hover {
 
 .service-icon {
   background-color: #fff;
-  color: #1D809F;
+  color: rgba(19,33,40, 0.8);
   height: 12rem;
   width: 12rem;
   display: block;
@@ -11636,16 +11688,16 @@ footer.footer .social-link:hover {
 @keyframes glower {
 
   from{
-    filter: brightness(1);
+    filter: brightness(56%);
     filter:grayscale(0);
-    filter:saturate(10%);
-    filter:sepia(0.8);
+    filter:saturate(70%);
+    
   }
   to{
-    filter: brightness(0);
+    filter: brightness(0%);
     filter:grayscale(1);
     filter:saturate(0);
-    filter:sepia(0);
+  
   }
   
 }
