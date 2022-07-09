@@ -11722,7 +11722,6 @@ footer.footer .social-link:hover {
   background-size: contain;
   position: relative;
   top:calc(50vh - 300px);
-  border: 5px solid slategray;
 }
 #close{
   position: absolute;
