@@ -11722,6 +11722,24 @@ footer.footer .social-link:hover {
   background-size: contain;
   position: relative;
   top:calc(50vh - 300px);
+  border: 5px solid #fff;
+}
+.promocontent{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5px 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.promocontent img{
+  margin-bottom: 10px;
+}
+.promocontent h2{
+  margin-bottom: 0px;
+}
+.promocontent p{
+  color: lightslategray;
 }
 #close{
   position: absolute;
@@ -11738,3 +11756,15 @@ footer.footer .social-link:hover {
 .hide{
   display: none !important;
 }
+.social_wrapper{
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+}
+.social_wrapper li{
+ margin:20px 8px;
+}
+.social_wrapper li a{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+ }
