@@ -11504,14 +11504,14 @@ footer.footer .social-link:hover {
   position: fixed;
   min-width: 100px;
   max-width: 130px;
-  width:20vw;
+  width:130px;
   height: 130px;
   margin: 0px 15px;
   z-index: 300;
   background-image: url(../assets/img/VR_title.png);
   background-repeat: no-repeat;
-  background-size: contain;
-  animation: glower .33s ease-in 0ms infinite alternate;
+  animation: language 6s steps(6) infinite alternate;
+  
 }
 .synopsis{
   background-image: url(../assets/img/synopsis.jpg);
@@ -11669,7 +11669,7 @@ footer.footer .social-link:hover {
   background-color: #000;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-image: url(../assets/img/VR_title.png);
+  background-image: url(../assets/img/VR_title_1.png);
   background-size: contain;
   background-position: center;
   transition: all 0.3s ease-out;
@@ -11777,4 +11777,14 @@ footer.footer .social-link:hover {
 .social_wrapper li a{
   color: rgba(255, 255, 255, 0.8);
   font-size: 24px;
+ }
+
+ @keyframes language{
+    from{
+      background-position: 0 0;
+    }
+    to{
+      background-position: -780px 0;
+    }
+    
  }
