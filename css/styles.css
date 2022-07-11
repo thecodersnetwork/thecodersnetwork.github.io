@@ -11728,6 +11728,12 @@ footer.footer .social-link:hover {
   border: 5px solid #fff;
   background-color: #000;
 }
+
+.sidebar-nav > .sidebar-brand a{
+  font-weight: bolder;
+  text-shadow: #a77d1e 2px 2px 0px;
+  border-color: aliceblue;
+}
 .promocontent{
   color: white;
   background-color: rgba(0, 0, 0, 0.7);
