@@ -11714,15 +11714,19 @@ footer.footer .social-link:hover {
 .promowrapper{
   max-width: 600px;
   max-height:600px;
-  min-width:300px;
-  min-height:300px;
+  min-width: 300px;
+  min-height: 300px;
   width: 50vw;
+  height: 50vh;
   background-image: url(../assets/img/promo.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   position: relative;
-  top:calc(50vh - 300px);
+  background-position: center;
+  background-position: top;
+  top:8vh;
   border: 5px solid #fff;
+  background-color: #000;
 }
 .promocontent{
   color: white;
