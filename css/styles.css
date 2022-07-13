@@ -11486,6 +11486,12 @@ footer.footer .social-link:hover {
 .masthead .ytplayer{
   height: 100vh;
   border: none;
+  overflow: hidden;
+}
+.playeryt{
+  width:125%;
+  height:140%;
+  margin-left: -12.5%;
 }
 .ytplayer{
   width: 100vw;
