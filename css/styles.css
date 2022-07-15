@@ -11669,7 +11669,7 @@ footer.footer .social-link:hover {
   #screenshop .portfolio-item:hover img {
     -webkit-clip-path: inset(0);
             clip-path: inset(0);
-            transform: scale(1.2);
+            transform: scale(2.0);
             transition: all ease-in 1.33s;
 }
 }
