@@ -11737,14 +11737,14 @@ footer.footer .social-link:hover {
   min-width: 300px;
   min-height: 300px;
   width: 50vw;
-  height: 50vh;
+  height: 80vh;
   background-image: url(../assets/img/promo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   background-position: center;
   background-position: top;
-  top:8vh;
+  top:10vh;
   border: 5px solid #fff;
   background-color: #000;
 }
