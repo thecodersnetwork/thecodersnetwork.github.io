@@ -11635,6 +11635,7 @@ footer.footer .social-link:hover {
     transition: clip-path 0.25s ease-out, background-color 0.7s, -webkit-clip-path 0.25s ease-out;
     -webkit-clip-path: inset(0px);
             clip-path: inset(0px);
+            transition: all ease-in 0.83s;
   }
   .portfolio-item .caption .caption-content {
     transition: opacity 0.25s;
@@ -11648,18 +11649,30 @@ footer.footer .social-link:hover {
     transition: clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
     -webkit-clip-path: inset(-1px);
             clip-path: inset(-1px);
+            transition: all ease-in 0.83s;
   }
   .portfolio-item:hover img {
     -webkit-clip-path: inset(2rem);
             clip-path: inset(2rem);
   }
   .portfolio-item:hover .caption {
-    background-color: rgba(29, 128, 159, 0.9);
+    background-color: rgba(29, 128, 159, 0.5);
     -webkit-clip-path: inset(2rem);
             clip-path: inset(2rem);
   }
+  #screenshop .portfolio-item:hover .caption {
+    background-color: transparent;
+    -webkit-clip-path: none;
+            clip-path: none;
+            transition: all ease-in 1.33s;
+  }
+  #screenshop .portfolio-item:hover img {
+    -webkit-clip-path: inset(0);
+            clip-path: inset(0);
+            transform: scale(1.2);
+            transition: all ease-in 1.33s;
 }
-
+}
 .service-icon {
   background-color: #fff;
   color: rgba(19,33,40, 0.8);
@@ -11802,13 +11815,20 @@ footer.footer .social-link:hover {
   margin-top: 20px;
  }
 
- #screenshop .caption-content{
-  background-color: rgba(0,0,0,0.6);
+ #screenshop .caption-content {
   width: 100%;
   padding: 10px;
   text-align: center;
-  backdrop-filter: blur(9px);
   margin-bottom: 0;
   margin-left: 0;
   margin-right: 0;
+ }
+
+ #screenshop div.row div > div.h2{
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  color: whitesmoke;
+  margin-top: 20px;
+  font-weight: 400;
  }
