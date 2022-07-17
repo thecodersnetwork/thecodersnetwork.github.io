@@ -11489,9 +11489,9 @@ footer.footer .social-link:hover {
   overflow: hidden;
 }
 .playeryt{
-  width:125%;
-  height:140%;
-  margin-left: -12.5%;
+  width:100%;
+  height:120%;
+  margin-left: -0%;
 }
 .ytplayer{
   width: 100vw;
@@ -11510,9 +11510,8 @@ footer.footer .social-link:hover {
   position: fixed;
   min-width: 100px;
   max-width: 130px;
-  width:130px;
-  height: 130px;
-  margin: 0px 15px;
+  width:120px;
+  height: 120px;
   z-index: 300;
   background-image: url(../assets/img/VR_title.png);
   background-repeat: no-repeat;
@@ -11788,15 +11787,20 @@ footer.footer .social-link:hover {
 }
 .social_wrapper{
   position: fixed;
-  bottom: 70px;
-  right: 20px;
+  bottom: 10px;
+  left: 10px;
 }
 .social_wrapper li{
  margin:20px 8px;
 }
 .social_wrapper li a{
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 1);
   font-size: 24px;
+  opacity: 0.4;
+ }
+ .social_wrapper li a:hover{
+  color: rgba(255, 255, 255, 1);
+  opacity: 1;
  }
 
  @keyframes language{
