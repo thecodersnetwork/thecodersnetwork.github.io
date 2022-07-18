@@ -11515,6 +11515,15 @@ footer.footer .social-link:hover {
     font-size: 5.5rem;
   }
 }
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .brand{
+    position: fixed;
+    min-width: 100px;
+    max-width: 80px;
+    width:80px;
+    height: 80px;
+  }
+  }
 .brand{
   position: fixed;
   min-width: 100px;
@@ -11803,7 +11812,7 @@ footer.footer .social-link:hover {
   height: 50px;
   border-radius: 5px;
   left: auto;
-  font-size: 24px;
+ 
 }
 .social_wrapper.player-controls li{
  margin:20px 8px;
@@ -11814,7 +11823,8 @@ footer.footer .social-link:hover {
  width: 50px;
  height: 50px;
  border-radius: 5px;
- line-height: 50px;
+ font-size: 150%;
+ line-height: 42pt;
 }
 
 .social_wrapper{
