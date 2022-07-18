@@ -54,7 +54,13 @@
         <!-- Header-->
         <header class="masthead ">
             <div class="d-flex align-items-center ytplayer">
-                <iframe class="playeryt" width="100%" frameborder="0" height="100%" style="overflow:hidden;position: fixed;z-index:-1;" allowfullscreen src="https://www.youtube-nocookie.com/embed/3wHXm6TqjcY?modestbranding=1&playlist=3wHXm6TqjcY&mute=1&autoplay=1&loop=1&controls=0&showinfo=0&rel=0&allowfullscreen=true&wmode=transparent&onPlaybackQualityChange=hd1080&cc_load_policy=0&playsinline=0&html5=1&widgetid=1"></iframe>
+                <!-- <iframe class="playeryt" width="100%" frameborder="0" height="100%" style="overflow:hidden;position: fixed;z-index:-1;" allowfullscreen src="https://www.youtube-nocookie.com/embed/3wHXm6TqjcY?modestbranding=1&playlist=3wHXm6TqjcY&mute=1&autoplay=1&loop=1&controls=0&showinfo=0&rel=0&allowfullscreen=true&wmode=transparent&onPlaybackQualityChange=hd1080&cc_load_policy=0&playsinline=0&html5=1&widgetid=1"></iframe> -->
+                
+                <video width="100%" height="auto" autoplay muted id="videocontrols" loop>
+                    <source src="https://d3upfanw68nboq.cloudfront.net/media/979c6bac-9503-4218-ae06-e9eb635faa56/Lullaby%20Song%20-%20Kannada%20Rajkumari.mp4" type="video/mp4">
+
+                    Your browser does not support the video tag.
+                  </video>
             </div>
         </header>
         <!-- About-->
@@ -313,6 +319,15 @@
             </ul>
         </div>
 
+        <div class="social_wrapper text-center player-controls">
+            <ul class="list-unstyled">
+                <li>
+                    <span  onclick="disableSound()" id="soundoff" class="hide"><i class="fa-solid fa-volume-high"  title="Mute Audio"></i></span>
+                    <span  onclick="enableSound()" id="soundon" ><i class="fa-solid fa-volume-mute"  title="Enable Audio"></i></span>
+                </li>
+            </ul>
+        </div>
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
@@ -321,6 +336,19 @@
             closePromo=()=> {
                 let x = document.getElementById('offerOverlay');
                 x.classList.add('hide');
+            }
+            let controller = document.getElementById('videocontrols');
+            let soundoff = document.getElementById('soundoff');
+            let soundon = document.getElementById('soundon');
+            enableSound =()=>{
+                soundoff.classList.remove('hide');
+                soundon.classList.add('hide');
+                controller.muted = !controller.muted;
+            }
+            disableSound =()=>{
+            soundoff.classList.add('hide');
+            soundon.classList.remove('hide');
+            controller.muted = !controller.muted;
             }
         </script>
     </body>
