@@ -1,0 +1,233 @@
+@import 'variables';
+@import 'responsive';
+@import 'bsoverrides';
+body{
+    font-family: 'Segoe UI';
+    font-size: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+header{
+    .brand-image{
+        max-width: 4rem;
+        display: block;
+    }
+    .navbar{
+        background-color:var(--mt-white);
+        .navbar-nav .nav-item{
+            padding: 0px 1.2rem;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        .nav-link{
+            position: relative;
+        }
+        .nav-link.active{
+            color: var(--mt-primary-color);
+        }
+        .nav-link.active::after{
+        
+            width:100%;
+            height: 5px;
+            background-color: var(--mt-primary-color);
+            display: inline-block;
+            position: absolute;
+            bottom: -25px;
+            left: 0px;
+        }
+    }
+    
+}
+.carousel{
+    max-height: calc(100vh - 206px);
+    @include breakpoint(xs){
+        max-height: calc(80vh);
+    }
+    .carousel-inner{
+        .carousel-item{
+            display: flex;
+            align-items: center;
+        }
+        
+        .carousel_content{
+            max-height: calc(100vh - 206px);
+            position: relative;
+            @include breakpoint(xs){
+                max-height: calc(80vh);
+            }
+        }
+        .carousel_content::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($color: #c6c6c6b5, $alpha: 0.7);
+            top: 0;
+            left: 0;
+            filter: blur(2px);
+        }
+        .carousel-caption{
+            margin-bottom: 30vh;
+            text-align: left;
+            @include breakpoint(sm){
+                margin-bottom: 25vh;
+            }
+            @include breakpoint(md){
+                margin-bottom: 20vh;
+            }
+            @include breakpoint(lg){
+                margin-bottom: 25vh;
+            }
+           
+            @include breakpoint(xs){
+                margin-bottom: 15vh;
+            }
+           
+            h1{
+                @include breakpoint(sm){
+                    font-size:2.5rem;
+                }
+                @include breakpoint(lg){
+                    font-size: var(--mt-font-banner-headings);
+                }
+                color: var(--mt-dark-grey);
+                
+                font-weight: 900;
+                margin-bottom: 2rem;
+                span{
+                    color: var(--mt-primary-color);
+                }
+            }
+            p{
+                color: var(--mt-primary-color);
+                font-size: var(--mt-font-banner-description);
+                margin: 0;
+            }
+        }
+    }
+    
+}
+.what_we_offer{
+    .wrapper{
+        width: 100%;
+        @include flexbox($gap:1.2rem, $justifyContent:space-between);
+    }
+    .col{
+        padding: 0.5rem;
+        max-width: 280px;
+        @include breakpoint(xs){
+            min-width: 100%;
+        }
+        @include breakpoint(sm){
+            min-width: 50%;
+        }
+        @include breakpoint(md){
+            min-width: 20%;
+        }
+    }
+}
+.cards{
+    background-color: var(--mt-white);
+    min-height: 2rem;
+    border-radius: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .img-wrapper{
+        width: 100%;
+    }
+    .card-heading{
+        padding: 0 1rem;
+        width: 100%;
+        margin-top: 1rem;
+        @include flexbox($justifyContent:space-between, $gap:1rem);
+        h3{
+            display: inline-flex;
+            font-size: 1.3rem;
+        }
+    }
+    .card-description{
+        padding:0 1rem;
+    }
+    .card-footer{
+        @include flexbox($justifyContent:space-between, $gap:1rem);
+        background-color: transparent;
+        color: var(--mt-primary-color);
+        padding: 1rem;
+        
+    }
+}
+.testimonials{
+    .container .row .col{
+        @include breakpoint(xs){
+            min-width: 200px;
+        }
+    }
+    background-image: url(../images/test_bg.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border-top: 1px solid var(--mt-border);
+    border-bottom: 1px solid var(--mt-border);
+    .test_cards{
+        width: 100%;
+        border: 1px solid var(--mt-border);
+        margin-top: 6rem;
+        padding: 0px 1rem 20px;
+        box-shadow: var(--mt-border) 3px 6px 12px;
+        background-color: var(--mt-white);
+        border-top: 9px solid var(--mt-brand-navy);
+        border-radius: 8px;
+       
+        .test_image{
+            text-align: center;
+            border: 7px solid var(--mt-white);
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            margin: -53px auto 0 auto;
+            background-color: var(--mt-brand-navy);
+            img{
+                transform: scale(1.2);
+            }
+        }
+        .test_Name{
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--mt-dark-grey);
+            text-align: center;
+        }
+        .test_location{
+            font-size: 0.8rem;
+            font-weight: 400;
+            color: var(--mt-primary-color);
+            text-align: center;
+        }
+    }
+    
+}
+footer{
+    h4{
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+}
+.image_wrapper{
+    width: 100%;
+    text-align: center;
+    border: 1px solid var(--mt-border);
+    padding: 2rem;
+    background-color: rgba($color: #000000, $alpha: 0.03);
+}
+.sitemap{
+    li > a{
+        text-decoration: none;
+        color: var(--mt-dark-grey);
+        &:hover{
+            color: var(--mt-primary-color);
+        }
+    }
+}

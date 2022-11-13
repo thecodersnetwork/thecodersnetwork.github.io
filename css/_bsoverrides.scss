@@ -1,0 +1,9 @@
+@import './variables';
+.form-control, .form-select{
+    border-radius: 0;
+}
+.btn-primary{
+    background-color: var(--mt-primary-color);
+    border: none;
+    border-radius: 0;
+}
