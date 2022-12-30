@@ -1,0 +1,111 @@
+@import 'responsive.scss';
+
+.text-red{
+    color: var(--mt-primary-color);
+}
+.services{
+    .section_wrapper.intro{
+        @include breakpoint(lg){
+        padding: 0;
+       // min-height: 36rem;
+        }
+        .row{
+            align-items: center;
+        }
+        p{
+            margin-top: 2rem;
+            &.pre-line{
+                padding-left: 3.5rem;
+                position: relative;
+                line-height: 30px;
+                max-width: 40rem;
+                &::before{
+                    content: "";
+                    width: 3rem;
+                    height: 2px;
+                    position: absolute;
+                    top: 0.867rem;
+                    left: 0;
+                    background-color: var(--mt-primary-color);
+                }
+            }
+            a{
+                color: white;
+                padding: 0.8rem 1.5rem;
+                text-decoration: none;
+                background-color: var(--mt-primary-color);
+                line-height: 5rem;
+            }
+        }
+        h3{
+            font-weight: 800;
+            text-transform: uppercase;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--mt-text-grey);
+            font-size: 2.5rem;
+            span{
+                color: var(--mt-primary-color);
+            }
+        }
+    }
+    
+}
+.structural{
+    background-image: url(../images/structural.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 36rem;
+    background-blend-mode: multiply;
+    mix-blend-mode: multiply;
+    background-size: contain;
+    background-position: center left;
+}
+.threed{
+    background-image: url(../images/3d.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 36rem;
+    background-blend-mode: multiply;
+    background-size: contain;
+    background-position: center;
+}
+.draw{
+    background-image: url(../images/draw.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 36rem;
+    background-blend-mode: multiply;
+    mix-blend-mode: multiply;
+    background-size: contain;
+    background-position: center;
+}
+.analysis{
+    background-image: url(../images/analysis.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 36rem;
+    background-blend-mode: multiply;
+    mix-blend-mode: multiply;
+    background-size: contain;
+    background-position: center;
+}
+.estimation{
+    background-image: url(../images/estimation.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 36rem;
+    background-blend-mode: multiply;
+    mix-blend-mode: multiply;
+    background-size: contain;
+    background-position: center;
+}
+.banner{
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 36rem;
+    background-blend-mode: multiply;
+    mix-blend-mode: multiply;
+    background-size: contain;
+    background-position: right bottom;
+}
