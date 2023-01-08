@@ -301,6 +301,38 @@ h2.middle_heading::before {
   background-position: right bottom;
 }
 
+.project .card .description {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem;
+  align-items: center;
+}
+.project .card .label {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.project .text-small {
+  font-size: 12px !important;
+  text-transform: uppercase;
+}
+.project .img-holder {
+  overflow: hidden;
+}
+.project .img-holder img {
+  transition: all ease-in 0.33s;
+}
+.project .img-holder img:hover {
+  transform: scale(1.2);
+  transition: all ease-in 0.33s;
+  cursor: pointer;
+}
+.project h3 {
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
 body {
   font-family: "Segoe UI";
   font-size: 100%;
