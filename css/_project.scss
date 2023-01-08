@@ -16,6 +16,10 @@
     .text-small{
         font-size: 12px !important;
         text-transform: uppercase;
+        color: white !important;
+        width: fit-content;
+        background-color: var(--mt-primary-color);
+        padding: 0.5rem 1.2rem;
     }
     .img-holder{
         overflow: hidden;
