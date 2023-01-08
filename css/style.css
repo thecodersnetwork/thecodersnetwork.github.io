@@ -219,11 +219,15 @@ h2.middle_heading::before {
   background-color: var(--mt-primary-color);
 }
 .services .section_wrapper.intro p a {
-  color: white;
-  padding: 0.8rem 1.5rem;
   text-decoration: none;
-  background-color: var(--mt-primary-color);
+  color: var(--mt-text-grey);
   line-height: 5rem;
+}
+.services .section_wrapper.intro p a span {
+  color: white !important;
+  padding: 0.4rem 0.8rem;
+  text-decoration: none;
+  background-color: var(--mt-primary-color) !important;
 }
 .services .section_wrapper.intro h3 {
   font-weight: 800;
@@ -337,6 +341,12 @@ h2.middle_heading::before {
 .project h3 {
   font-weight: 700;
   margin-bottom: 2rem;
+}
+
+@media (max-width: 767px) {
+  .card {
+    margin-bottom: 1rem;
+  }
 }
 
 body {

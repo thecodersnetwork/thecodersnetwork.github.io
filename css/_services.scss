@@ -29,11 +29,16 @@
                     background-color: var(--mt-primary-color);
                 }
             }
-            a{
-                color: white;
-                padding: 0.8rem 1.5rem;
+            a{ 
                 text-decoration: none;
-                background-color: var(--mt-primary-color);
+                color: var(--mt-text-grey);
+                span{
+                color: white !important;
+                padding: 0.4rem 0.8rem;
+                text-decoration: none;
+                background-color: var(--mt-primary-color) !important;
+                }
+                
                 line-height: 5rem;
             }
         }

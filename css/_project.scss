@@ -39,3 +39,8 @@
     }
 
 }
+.card{
+    @include breakpoint(xs){
+        margin-bottom: 1rem;
+    }
+}
